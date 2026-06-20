@@ -16,13 +16,8 @@ To build and test a simple optical encoder and process its signal using numerica
 - Euler integration for angular position
 - Low-pass filtering to reduce noise
 
-## 📁 Contents
-- Report (PDF)
-- Images of setup and results
-
 ## 🧠 Applications
 Optical encoders are used in motor control, robotics, and automation systems for measuring position and speed.
-
 ---
 
 Developed as a hands-on engineering exercise combining hardware and signal processing.
