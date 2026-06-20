@@ -1,14 +1,4 @@
 
-% Hensikten med programmet er å ....
-% Følgende sensorer brukes:
-% - Lyssensor
-
-% Følgende motorer brukes:
-% - motor d
-
-
-%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-%         EXPERIMENT SETUP, FILENAME AND FIGURE
 
 clear; close all   % Alltid lurt å rydde workspace opp først
 online = false;     % Online mot EV3 eller mot lagrede data?
@@ -83,14 +73,9 @@ while ~JoyMainSwitch
             pause(0.03)
         end
     end
-    %--------------------------------------------------------------
 
     % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     %             CONDITIONS, CALCULATIONS AND SET MOTOR POWER
-    % Gjør matematiske beregninger og motorkraftberegninger.
-    % hvis motor er tilkoplet.
-
-
     % Tilordne målinger til variabler
 
     Nhull= 16;
@@ -131,15 +116,9 @@ while ~JoyMainSwitch
         motorD.Speed = JoyForward;
         start(motorD)
     end
-    %--------------------------------------------------------------
 
     %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     %                  PLOT DATA
-    %
-    % Husk at syntaksen plot(Tid(1:k),måling(1:k))
-    % gir samme opplevelse i online=0 og online=1 siden
-    % alle målingene (1:end) eksisterer i den lagrede .mat fila
-
     % Plotter enten i sann tid eller når forsøk avsluttes
     if plotting || JoyMainSwitch
         figure(fig1)
